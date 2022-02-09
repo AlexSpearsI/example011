@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <title>Random Jokes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+<div class="wrapper">
+    <header>
+        <p class="lang" id="en" onclick="language();">en</p>
+        <audio src="./assets/audio/click.mp3" id="audio"></audio>
+        <audio src="./assets/audio/lang.mp3" id="audioLang"></audio>
+
+    </header>
+    <main>
+        <div class="main">
+            <img src="./assets/svg/1.svg" id="images">
+            <div class="saying">
+                <p class="saying-text" id="sayings" >В жизни всякое бывает, но с годами все реже.</p>
+            </div>
+            <div class="div_button">
+                <input type="button" value="click" onclick="getRandomImg(arrayWithImages); getRandomSaying(arrayWithSayings); play();" class="btn_main" id="btn_main">
+            </div>
+        </div>
+    </main>
+    <footer class="container">
+        <div class="footer">
+            <div class="git">
+                <p>© 2022 <a href="https://github.com/AlexSpearsI" target="_blank">GitHub</a></p>
+            </div>
+            <a href="https://rs.school/js-stage0/" target="_blank"><img src="./assets/svg/rss.svg" class="rss"></a>
+        </div>
+    </footer>
+</div>
+<script src="./scripts.js"></script>
+</body>
+</html>
